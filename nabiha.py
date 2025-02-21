@@ -1,4 +1,9 @@
+"""
+Nabiha's salary project. it's a parctice project to leanr more about loops and lists
 
+
+used to calculate how much money we saved after rents..
+"""
 savingList = []
 
 answer = "yes"
@@ -8,6 +13,11 @@ while answer != "no":
     saving = int(input("Enter your savings percentages: "))
     rent = int(input("Enter your rent percentages: "))
     electricity = int(input("Enter your electricity percentages: ")) 
+
+    total_percentages = saving + rent + electricity
+
+    if total_percentages > 100:
+        print("the total percentage can't be more than 100%!! please try again")
 
     savingPer =  (saving / 100) * monthlySalary
     rentPer = (rent / 100) * monthlySalary
