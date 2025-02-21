@@ -34,3 +34,8 @@ while answer != "no":
     print(f"your remainder salary power 2: {total_salary}$ ")
     print()
     answer = input("do you want to continue?(if you want to stop input NO): ").lower()
+
+sum = 0
+for i in savingList:
+    sum = sum + i
+print(f"your additional savings for {monthName} is: {sum} ")
